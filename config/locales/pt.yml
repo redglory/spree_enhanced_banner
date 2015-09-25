@@ -1,0 +1,20 @@
+---
+pt:
+  spree:
+    add_banner: 'Adicionar Banner'
+    banner_successfully_created: 'Banner criado com sucesso.'
+    banner_unsuccessfully_created: 'Ocorreu um problema na criação do banner.'
+    banner_successfully_removed: 'Banner eliminado com sucesso.'
+    configuration_successfully_saved: 'Configuração guardada com sucesso.'
+    configuration_unsuccessfully_saved: 'Ocorreu um problema ao gravar a configuração.'
+    configuration_set_successfully: 'Configuração definida com sucesso.'
+    configuration_set_failed: 'Ocorreu um problema ao definir a configuração.'
+    enhanced_banner_settings: 'Definições de Enhanced Banner'
+    mode: 'Modo'
+    banners_max_count: 'N.º Máximo de Banners'
+    reset_indexes: 'Inicializar Índices?'
+    set_configuration: 'Definir Configuração'
+    all_taxons_configuration: 'Configuração para todos os taxons'
+    taxon_configuration: 'Configuração para o taxon'
+    no_banners_added: 'Não existem banners adicionados'
+    new_banner_for: 'Novo Banner para'

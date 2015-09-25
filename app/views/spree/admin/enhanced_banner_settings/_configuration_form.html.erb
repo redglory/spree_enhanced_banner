@@ -1,19 +1,21 @@
-<%= form_for @configuration, :url => save_admin_enhanced_banner_settings_path do |form|%>
-	<div class="form-fields">
-	 	<div class="field">
-	 		<%= form.label :selection_mode, 'Mode' %>:
-			<%= form.select(:selection_mode, options_for_select([['Random', 'random'], ['Cycle', 'cycle'], @configuration.selection_mode])) %>
-	 	</div>
-	 	<div class="field">
-	 		<%= form.label :max_count, 'Max Count Banners' %>:
-			<%= form.number_field :max_count, :min => 1 %>
-	 	</div>
-		<div class="field">
-			<%= label_tag :reset_indexes, 'Reset Index?' %>:
-			<%= check_box_tag(:reset_indexes) %>
-		</div>
-	</div>
-	<div class="form-actions">
-		<%= form.submit "Set Configuration" %>
-	</div>
+<%= form_for @configuration, :url => save_admin_enhanced_banner_settings_path do |f|%>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= f.label :selection_mode, Spree.t(:mode) %>:
+        <%= f.select :selection_mode, options_for_select([['Random', 'random'], ['Cycle', 'cycle'], @configuration.selection_mode]), :class => "select2" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :max_count, Spree.t(:banners_max_count) %>:
+        <%= f.number_field :max_count, :min => 1 %>
+      </div>
+      <div class="form-group">
+        <%= label_tag :reset_indexes, Spree.t(:reset_indexes) %>:
+        <%= check_box_tag(:reset_indexes) %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.submit Spree.t(:set_configuration) %>
+  </div>
 <% end %>

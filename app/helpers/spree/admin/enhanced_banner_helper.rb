@@ -1,6 +1,6 @@
 module Spree
-	module Admin
-		module EnhancedBannerHelper
-		end
-	end
+  module Admin
+    module EnhancedBannerHelper
+    end
+  end
 end

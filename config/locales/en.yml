@@ -1,6 +1,20 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
+---
 en:
-  add_banner: "Add Banner"
-  enhanced_banner_settings: "Enhanced Banner Settings"
+  spree:
+    add_banner: 'Add Banner'
+    banner_successfully_created: 'Banner was successfully created.'
+    banner_unsuccessfully_created: 'Sorry, banner creation failed.'
+    banner_successfully_removed: 'Banner was successfully removed.'
+    configuration_successfully_saved: 'Configuration was successfully saved.'
+    configuration_unsuccessfully_saved: 'Sorry, configuration could not be save.'
+    configuration_set_successfully: 'Configuration was successfully seted.'
+    configuration_set_failed: 'Sorry, configuration set failed.'
+    enhanced_banner_settings: 'Enhanced Banner Settings'
+    mode: 'Mode'
+    banners_max_count: 'Max Count Banners'
+    reset_indexes: 'Reset Indexes?'
+    set_configuration: 'Set Configuration'
+    all_taxons_configuration: 'Configuration for all taxons'
+    taxon_configuration: 'Configuration for taxon'
+    no_banners_added: 'No banners added yet'
+    new_banner_for: 'New Banner for'

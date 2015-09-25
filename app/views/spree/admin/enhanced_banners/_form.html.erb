@@ -1,9 +1,8 @@
-
-<%= form_for [:admin, @image], :url => admin_taxon_enhanced_banners_path(:taxon_id => @taxon.id), :html => { :multipart => true } do |form| %>
-  <div class="form-fields">
-  	<%= form.file_field :attachment %>
+<div data-hook="admin_banner_form_fields" class="row">
+  <div class="col-md-6">
+    <div data-hook="file" class="form-group">
+      <%= f.label :attachment, Spree.t(:filename) %>
+      <%= f.file_field :attachment %>
+    </div>
   </div>
-  <div class="form-actions">
-  	<%= form.submit "Add Banner" %>
-  </div>
-<% end %>
+</div> 

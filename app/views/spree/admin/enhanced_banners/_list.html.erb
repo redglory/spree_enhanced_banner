@@ -1,19 +1,20 @@
-
 <div class="container-table" data-hook="admin-container-table-banners-taxon">
-	<%if @banners.count == 0 %>
-		<p>None banners added</p>
-	<% else %>
-		<table class="no-border-table">
-			<% @banners.each do |banner| %>
-				<tr>
-					<td>
-						<%= image_tag banner.attachment.url(:banner_preview) %>
-					</td>
-					<td class="actions">
-						<%= link_to_delete banner, :url => admin_taxon_enhanced_banner_path(:taxon_id => @taxon.id, :id => banner.id), :no_text => true %>
-					</td>
-				</tr>
-			<% end %>
-		</table>
-	<% end %>
+  <% if @banners.any? %>
+    <table class="table no-border-table">
+      <% @banners.each do |banner| %>
+        <tr>
+          <td>
+            <%= image_tag banner.attachment.url(:banner_preview) %>
+          </td>
+          <td class="actions" data-hook="admin_enhanced_banner_index_row_actions">
+            <%= link_to_delete banner, :url => admin_taxon_enhanced_banner_path(:taxon_id => @taxon.id, :id => banner.id), :no_text => true %>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  <% else %>
+    <div class="alert alert-info no-objects-found">
+      <%= Spree.t(:no_banners_added) %>
+    </div>
+  <% end %>
 </div>

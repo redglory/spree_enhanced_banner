@@ -4,7 +4,7 @@ Spree::Image.class_eval do
       :small => '100x100>', # images on category view
       :product => '240x240>', # full product image
       :large => '600x600>',  # light box image
-      :banner => '800x200>', # banner image
+      :banner => '850x300>', # banner image
       :banner_preview => '440x140>' # banner image
     }
   end
